@@ -1,0 +1,197 @@
+
+        :root {
+            --primary-color: #0e3a36;
+            --secondary-color: #c61515;
+            --text-color: #eee4e4;
+            --light-color: #0f655e;
+            --shadow: 0 4px 6px rgba(37, 31, 31, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--text-color);
+            
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        
+        .tagline {
+            font-size: 1.4rem;
+            color: rgb(186, 223, 206);
+            margin-top: 5px;
+            font-style:italic;
+        }
+        
+        .calculator {
+            background-color: rgb(180, 223, 207);
+            border-radius: 17px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        .subjects-container {
+            margin-bottom: 30px;
+        }
+        
+        .subject-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        
+        .subject-row input, .subject-row select {
+            padding: 10px 15px;
+            border: 1px solid #045847;
+            border-radius: 5px;
+            font-size: 16px;
+            flex: 1;
+        }
+        
+        .remove-btn {
+            background-color: #bd4545;
+            color: rgb(241, 240, 240);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .remove-btn:hover {
+            background-color: #ad1818;
+            transform: scale(1.05);
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .add-btn, .calculate-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: var(--shadow);
+        }
+        
+        .add-btn {
+            background-color: var(--primary-color);
+            color: rgb(241, 236, 236);
+        }
+        
+        .add-btn:hover {
+            background-color: #1c5b55;
+            transform: translateY(-2px);
+        }
+        
+        .calculate-btn {
+            background-color: var(--primary-color);
+            color: rgb(241, 236, 236);
+           
+        }
+        
+        
+        .calculate-btn:hover {
+            background-color: #1c5b55;
+            transform: translateY(-2px);
+        }
+    
+        
+        
+        .result {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(52, 138, 123);
+            display: none;
+        }
+        
+        .sgpa-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        
+        .congrats {
+            font-size: 1.5rem;
+            color: #b4dcd6;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgba(154, 197, 194, 0.1);
+            display: none;
+            animation: pulse 2s infinite;
+        }
+        
+        .good-job {
+            font-size: 1.5rem;
+            color: #b4dcd6;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: rgba(154, 197, 194, 0.1);
+            display: none;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .subject-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            
+            .action-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .add-btn, .calculate-btn {
+                width: 100%;
+            }
+        }

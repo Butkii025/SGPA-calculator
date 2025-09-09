@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+       <link rel="stylesheet" href="SGPA.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <p class="tagline">Your Ultimate SGPA Calculator</p>
+        </header>
+        
+        <div class="calculator">
+            <h2>SGPA Calculator</h2>
+            
+            <div class="subjects-container" id="subjectsContainer">
+                <div class="subject-row">
+                    <input type="text" placeholder="Subject Name" class="subject-name">
+                    <select class="subject-grade">
+                        <option value="10">O (10)</option>
+                        <option value="9">A+ (9)</option>
+                        <option value="8">A (8)</option>
+                        <option value="7">B+ (7)</option>
+                        <option value="6">B (6)</option>
+                        <option value="5">C (5)</option>
+                        <option value="0">F (0)</option>
+                    </select>
+                    <input type="number"  class="subject-credit" min="1" value="1">
+                    <button class="remove-btn" onclick="removeSubject(this)">×</button>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="add-btn" onclick="addSubject()">+ Add Subject</button>
+                <button class="calculate-btn" onclick="calculateSGPA()">Calculate SGPA</button>
+            </div>
+            
+            <div class="result" id="result">
+                <h3>Your SGPA is</h3>
+                <div class="sgpa-value" id="sgpaValue">0.00</div>
+                
+                <div class="congrats" id="congratsMsg">
+                    Kya baat h mere dost! Aur kitna number laoge abb bss bhi kro,<br>
+                    kuchh dusro ke liye bhi baki rkho.. chalo thik h "Big cheers to you!🎉"
+                </div>
+                
+                <div class="good-job" id="goodJobMsg">
+                    Awesome work! Way to go champ... Keep it up! 👍
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p># 2025 butkii- mini project -05</p>
+    </footer>
+    
+   <script src="SGPA.js"></script>
+</body>
+</html>
