@@ -1,6 +1,8 @@
-# 🎓 SGPA Calculator
+## 🎓 SGPA Calculator
 
 A responsive and user-friendly SGPA (Semester Grade Point Average) calculator built with **HTML**, **CSS**, and **JavaScript**. Designed to help students quickly compute their academic performance with ease and accuracy.
+
+## [✏️use-it here](https://butkii025.github.io/SGPA-calculator/)
 
 ## 🚀 Features
 
@@ -23,4 +25,4 @@ A responsive and user-friendly SGPA (Semester Grade Point Average) calculator bu
    - Credit value  
    - Grade earned (on a 10-point scale)  
 3. Click **Calculate SGPA** to view your result.  
-4. Use **Reset** to clear all fields and start over.
+4. At the end, unlock some awesome note with your SGPA result preview🥱.
