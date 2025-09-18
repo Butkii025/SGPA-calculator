@@ -24,15 +24,3 @@ A responsive and user-friendly SGPA (Semester Grade Point Average) calculator bu
    - Grade earned (on a 10-point scale)  
 3. Click **Calculate SGPA** to view your result.  
 4. Use **Reset** to clear all fields and start over.
-
-
-
-
-
-
-
-
-
-
-```bash
-git clone https://github.com/your-username/sgpa-calculator.git
